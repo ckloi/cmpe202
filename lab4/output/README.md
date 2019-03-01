@@ -8,11 +8,11 @@
 
 | Restaurant   |            | 
 |----------|:-------------:|
-| Add new customers to wait queue | Restaurant |
-| Remove customers from wait queue |  CustomerParty | 
+| Add new CustomerParty to wait queue | Restaurant |
+| Remove CustomerParty from wait queue |  CustomerParty | 
 
 | Wait Queue   |            | 
 |----------|:-------------:|
-| Find empty table which satisfy Customer requirement | Restaurant |
-| Notify Customer via Text Message | CustomerParty | 
+| Find CustomerParty which satisfy table requirement | Restaurant |
+| Notify CustomerParty via Text Message | CustomerParty | 
 
