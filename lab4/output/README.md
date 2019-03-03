@@ -20,7 +20,7 @@ Handler: Wait Queue, Event Handler
 | CustomerParty   |       | 
 |----------|:-------------:|
 |**responsibility** | **collaborators**|
-| Send sign up request to the Restaurant Manager with Info | Restaurant |
+| Send sign up request to the Restaurant Manager with Info | Restaurant Manager|
 | Confirm request |      |
 | Cancel request   |      | 
 
@@ -29,13 +29,13 @@ Handler: Wait Queue, Event Handler
 |**responsibility** | **collaborators**|
 | Send new Customer request to Event Handler | Restaurant Manager |
 | Send Remove Customer request to Event Handler |  CustomerParty | 
-| Send Notify Message to Customer              |Wait Queue|
-|                                           |Event Handler|
+| Send Notify Message to Customer              |Event Handler|
+|                                           ||
 
 | Wait Queue   |            | 
 |----------|:-------------:|
 |**responsibility** | **collaborators**|
-| Find Customer which satisfy table requirement | Restaurant Manager |
+| Find Customer which satisfy table requirement | Event Handler |
 | Send request to Event Handler | Event Handler | 
 
 | Event Handler   |            | 
