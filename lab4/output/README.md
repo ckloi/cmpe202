@@ -36,7 +36,7 @@ Handler: Wait Queue, Event Handler
 |----------|:-------------:|
 |**responsibility** | **collaborators**|
 | Find Customer which satisfy table requirement | Event Handler |
-| Send request to Event Handler | Event Handler | 
+| Send request to Event Handler |  | 
 
 | Event Handler   |            | 
 |----------|:-------------:|
