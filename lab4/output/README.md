@@ -4,14 +4,15 @@
 | CustomerParty   |       | 
 |----------|:-------------:|
 | Send sign up request to the Restaurant Manager with Info | Restaurant |
-| Confirm / Cancel request to  |      | 
+| Confirm request |      |
+| Cancel request   |      | 
 
 | Restaurant Manager  |            | 
 |----------|:-------------:|
-| Send new Customer to wait queue | Restaurant Manager |
-| Send Remove Customer from wait queue |  CustomerParty | 
-|                                     |Wait Queue|
-||Event Handler|
+| Send new Customer request to Event Handler | Restaurant Manager |
+| Send Remove Customer request to Event Handler |  CustomerParty | 
+| Send Notify Message to Customer              |Wait Queue|
+|                                           |Event Handler|
 
 | Wait Queue   |            | 
 |----------|:-------------:|
