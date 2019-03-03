@@ -10,6 +10,7 @@ I used two chain of responsibility design pattern for this lab. The first chain 
 ### Role
 
 Client: Restaurant Manager, Wait Queue
+
 Handler: Wait Queue, Event Handler
 
 
