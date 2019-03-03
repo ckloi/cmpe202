@@ -5,7 +5,7 @@
 
 ### Pattern
 
-I used two chain of responsibility design pattern for this lab. The first chain is for Wait Queue which will continously find eligible Customer Party who meet the current empty table requirement. The second chain is the the Event Handler which will prcoess various request from Restaurant Manager and Wait Queue. eg: (Add/Delete Queue request, Eligible user event). The Restaurant Manager acts as the admin of the system, and the Customer doesn't need to know how the system works.
+I used two chain of responsibility design pattern for this lab. The first chain is for Wait Queue which will continously find eligible Customer Party who meet the current empty table requirement. The second chain is the the Event Handler which will prcoess various request from Restaurant Manager and Wait Queue. eg: (Add/Delete Queue request, Eligible user event). This design allows decoupling between wait queue and restaurant manager. In addition, the Restaurant Manager acts as the admin of the system, and the Customer doesn't need to know how the system works.
 
 ### Role
 
