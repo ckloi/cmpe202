@@ -38,7 +38,7 @@ Handler: Wait Queue, Event Handler
 | Send request to Event Handler | Event Handler | 
 
 | Event Handler   |            | 
-|**responsibility** | **collaborators**|
+|**responsibility** | **collaborators** |
 |----------|:-------------:|
 | Process Wait Queue modification request from Restaurant Manager  | Restaurant Manager |
 | Alert Restaurnt Manager when Eligible Customer event triggered fromWait Queue  | Wait Queue | 
