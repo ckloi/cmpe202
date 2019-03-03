@@ -3,17 +3,23 @@
 
 | CustomerParty   |       | 
 |----------|:-------------:|
-| Send sign up request to the restaurant with Info | Restaurant |
-| Confirm / Cancel request|  Wait Queue    | 
+| Send sign up request to the Restaurant Manager with Info | Restaurant |
+| Confirm / Cancel request to  |      | 
 
-| Restaurant   |            | 
+| Restaurant Manager  |            | 
 |----------|:-------------:|
-| Add new CustomerParty to wait queue | Restaurant |
-| Remove CustomerParty from wait queue |  CustomerParty | 
-|                                       |Wait Queue|
+| Send new Customer to wait queue | Restaurant Manager |
+| Send Remove Customer from wait queue |  CustomerParty | 
+|                                     |Wait Queue|
+||Event Handler|
 
 | Wait Queue   |            | 
 |----------|:-------------:|
-| Find CustomerParty which satisfy table requirement | Restaurant |
-| Notify CustomerParty via Text Message | CustomerParty | 
+| Find Customer which satisfy table requirement | Restaurant Manager |
+| Send request to Event Handler | Event Handler | 
+
+| Event Handler   |            | 
+|----------|:-------------:|
+| Process Wait Queue modification request from Restaurant Manager  | Restaurant Manager |
+| Alert Restaurnt Manager when Eligible Customer event triggered fromWait Queue  | Wait Queue | 
 
