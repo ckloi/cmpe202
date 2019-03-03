@@ -1,4 +1,4 @@
-![alt text](/din-tai-fung.png "din tai fung")
+![alt text](https://github.com/ckloi/cmpe202/blob/master/lab4/output/din-tai-fung.png "din tai fung")
 
 
 
