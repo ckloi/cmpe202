@@ -27,9 +27,9 @@ Handler: Wait Queue, Event Handler
 | Restaurant Manager  |            | 
 |----------|:-------------:|
 |**responsibility** | **collaborators**|
-| Send new Customer request to Event Handler | Restaurant Manager |
+| Send new Customer request to Event Handler | Event Handler |
 | Send Remove Customer request to Event Handler |  CustomerParty | 
-| Send Notify Message to Customer              |Event Handler|
+| Send Notify Message to Customer              ||
 |                                           ||
 
 | Wait Queue   |            | 
