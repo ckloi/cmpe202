@@ -17,8 +17,8 @@ public class Order implements IOrder {
         llb.addComponent(new Meat("BACON",1.0));
         llb.addComponent(new Vegetable("LETTUCE",1.0));
         llb.addComponent(new Vegetable("TOMATO",1.0));
-        llb.addComponent(new Sacue("G ONION",0.5));
-        llb.addComponent(new Sacue("JALA Grilled",0.5));
+        llb.addComponent(new Topping("G ONION",0.5));
+        llb.addComponent(new Topping("JALA Grilled",0.5));
 
         items.add(llb);
 

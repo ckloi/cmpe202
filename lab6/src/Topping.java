@@ -1,7 +1,7 @@
-public class Sacue extends IngredientLeaf {
+public class Topping extends IngredientLeaf {
 
 
-    public Sacue(String description, Double price) {
+    public Topping(String description, Double price) {
         super(description, price);
     }
 
