@@ -1,6 +1,6 @@
 ### Receipt
 
-![recepit](https://github.com/ckloi/cmpe202/blob/master/lab6/output/receipt.png)
+![receipt](https://github.com/ckloi/cmpe202/blob/master/lab6/output/recepit.png)
 
 ### Slip
 
