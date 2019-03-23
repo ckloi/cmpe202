@@ -1,7 +1,5 @@
 public class Premium extends LeafDecorator
 {
-    private String[] options ;
-    
     
     public Premium( String d )
     {

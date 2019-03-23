@@ -8,12 +8,10 @@ public class Toppings extends LeafDecorator
         super(d) ;
     }
     
-    // 4 toppings free, extra +.75
+    // all toppings free
     public void setOptions( String[] options )
     {
-        this.options = options ;
-        if ( options.length > 4 )
-            this.price += (options.length-4) * 0.75 ;
+        this.options = options;
     }
     
     public String getDescription() 

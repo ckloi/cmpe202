@@ -2,10 +2,13 @@
 
 public class Client {
 
-    public static void runTest()
+    public static void main(String [] args)
     {
-        Component theOrder = BuildOrder.getOrder() ;
-        theOrder.printDescription();
+        Component theOrder1 = BuildOrder.getOrder1() ;
+        theOrder1.printDescription();
+
+        Component theOrder2 = BuildOrder.getOrder2() ;
+        theOrder2.printDescription();
 
     }
 }

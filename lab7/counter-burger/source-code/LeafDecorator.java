@@ -4,9 +4,11 @@ import java.text.DecimalFormat;
 
 public abstract class LeafDecorator extends Leaf implements PriceDecorator
 {  
-   PriceDecorator wrapped ;
-   
-   public LeafDecorator( String d ) {
+    PriceDecorator wrapped ;
+
+    String[] options ;
+
+    public LeafDecorator( String d ) {
        super( d ) ;
        this.wrapped = null ;
     }
