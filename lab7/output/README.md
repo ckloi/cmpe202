@@ -1,1 +1,1 @@
-![alt text]("output.png")
+![output]("output.png")
