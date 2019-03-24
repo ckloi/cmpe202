@@ -87,93 +87,91 @@ public class BuildOrder {
         
         // Add Custom Burger to the ORder
         order.addChild( customBurger );
-        return order ;
-    }
-
-    public static Component getOrder2(){
-        Composite order = new Composite( "Order" ) ;
 
 
 
-        CustomBurger customBurger = new CustomBurger( "Build Your Own Burger" ) ;
+
+        CustomBurger customBurger2 = new CustomBurger( "Build Your Own Burger" ) ;
         // base price for 1/3 lb
-        Burger b = new Burger( "Burger Options" ) ;
-        String[] bo = { "Hormone & Antibiotic Free Beef*", "1/3lb.", "On A Bun" } ;
+        Burger b2 = new Burger( "Burger Options" ) ;
+        String[] bo2 = { "Hormone & Antibiotic Free Beef*", "1/3lb.", "On A Bun" } ;
 
-        b.setOptions( bo ) ;
+        b2.setOptions( bo2 ) ;
 
         // 1 cheese free, extra cheese +1.00
-        Cheese c = new Cheese( "Cheese Options" ) ;
-        String[] co = { "Smoked Gouda", "Greek Feta" } ;
+        Cheese c2 = new Cheese( "Cheese Options" ) ;
+        String[] co2 = { "Smoked Gouda", "Greek Feta" } ;
 
-        c.setOptions( co ) ;
-        c.wrapDecorator( b ) ;
-
-
-        PremiumCheese pc = new PremiumCheese("Premium Cheese Options");
-        String [] pco = {"Fresh Mozzarella"};
-
-        pc.setOptions(pco);
-
-        pc.wrapDecorator(c);
+        c2.setOptions( co2 ) ;
+        c2.wrapDecorator( b2 ) ;
 
 
-        Sauce s = new Sauce( "Sauce Options" ) ;
-        String[] so = { "Habanero Salsa" } ;
-        s.setOptions( so ) ;
-        s.wrapDecorator( pc ) ;
+        PremiumCheese pc2 = new PremiumCheese("Premium Cheese Options");
+        String [] pco2 = {"Fresh Mozzarella"};
+
+        pc2.setOptions(pco2);
+
+        pc2.wrapDecorator(c2);
+
+
+        Sauce s2 = new Sauce( "Sauce Options" ) ;
+        String[] so2 = { "Habanero Salsa" } ;
+        s2.setOptions( so2 ) ;
+        s2.wrapDecorator( pc2 ) ;
 
 
 
 
         // unlimited toppings free
-        Toppings t = new Toppings( "Toppings Options" ) ;
+        Toppings t2 = new Toppings( "Toppings Options" ) ;
 
-        String[] to = { "Crushed Peanuts"} ;
-        t.setOptions( to ) ;
-        t.wrapDecorator( s ) ;
+        String[] to2 = { "Crushed Peanuts"} ;
+        t2.setOptions( to2 ) ;
+        t2.wrapDecorator( s2 ) ;
 
 
         // premium topping +1.50
-        Premium pt = new PremiumToppings( "Premium Toppings Options" ) ;
-        String[] pto = { "Sunny Side Up Egg", "Marinated Tomatoes" } ;
-        pt.setOptions( pto ) ;
-        pt.wrapDecorator( t ) ;
+        Premium pt2 = new PremiumToppings( "Premium Toppings Options" ) ;
+        String[] pto2 = { "Sunny Side Up Egg", "Marinated Tomatoes" } ;
+        pt2.setOptions( pto2 ) ;
+        pt2.wrapDecorator( t2 ) ;
         // 1 sauce free, extra +.75
 
 
-        Bun bun = new Bun("Bun Options");
+        Bun bun2 = new Bun("Bun Options");
 
-        String[] buno = {"Gluten-Free Bun"};
+        String[] buno2 = {"Gluten-Free Bun"};
 
-        bun.setOptions(buno);
+        bun2.setOptions(buno2);
 
-        bun.wrapDecorator(pt);
+        bun2.wrapDecorator(pt2);
 
 
-        Side side = new Side("Side Options");
+        Side side2 = new Side("Side Options");
 
-        String[] sideO = {"Shoestring Fries"};
+        String[] sideO2 = {"Shoestring Fries"};
 
-        side.setOptions(sideO);
+        side2.setOptions(sideO2);
 
-        side.wrapDecorator(bun);
+        side2.wrapDecorator(bun2);
 
 
         // Setup Custom Burger Ingredients
-        customBurger.setDecorator( side ) ;
-        customBurger.addChild( b ) ;
-        customBurger.addChild( c ) ;
-        customBurger.addChild( pc ) ;
-        customBurger.addChild( s ) ;
-        customBurger.addChild( t ) ;
-        customBurger.addChild( pt ) ;
-        customBurger.addChild( bun ) ;
-        customBurger.addChild( side ) ;
+        customBurger2.setDecorator( side2 ) ;
+        customBurger2.addChild( b2 ) ;
+        customBurger2.addChild( c2 ) ;
+        customBurger2.addChild( pc2 ) ;
+        customBurger2.addChild( s2 ) ;
+        customBurger2.addChild( t2 ) ;
+        customBurger2.addChild( pt2 ) ;
+        customBurger2.addChild( bun2 ) ;
+        customBurger2.addChild( side2 ) ;
+
+
 
 
         // Add Custom Burger to the ORder
-        order.addChild( customBurger );
+        order.addChild( customBurger2 );
         return order ;
     }
 
