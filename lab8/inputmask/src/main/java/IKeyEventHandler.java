@@ -4,7 +4,9 @@
 public interface IKeyEventHandler
 {
 
-    void key(String ch, int cnt) ; 				// send key entry events to screen 
+    void key(String ch, int cnt) ; 				// send key entry events to screen
+    void delete();
     void setNext( IKeyEventHandler next) ;		// set next handler in event chain
+    void setPrev(IKeyEventHandler prev);
 
 }

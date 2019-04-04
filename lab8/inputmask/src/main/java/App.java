@@ -22,6 +22,10 @@ public class App {
         screen.addSubComponent(exp);
         screen.addSubComponent(cvc);
 
+        screen.addBackSubComponent(cvc);
+        screen.addBackSubComponent(exp);
+        screen.addBackSubComponent(num);
+
         count = 0;
 
     }
@@ -39,8 +43,14 @@ public class App {
     }
 
     public void key(String ch) {
-        count++;
-        screen.key(ch, count);
+
+
+        if (ch.equals("X")){
+            screen.delete();
+        }else if (Character.isDigit(ch.toCharArray()[0])){
+            screen.key(ch, count);
+        }
+
     }
 
 }
